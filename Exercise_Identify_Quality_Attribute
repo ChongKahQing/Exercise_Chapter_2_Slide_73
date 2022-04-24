@@ -1,0 +1,52 @@
+1. Identify 3 QAs for each system
+  
+  a. Enterprise Inventory Control: Performance, Modifiability, Integration
+  b. Smart Phone Map App: Performance, Usability, Availability
+  c. Video Game：Performance, Security, Testability
+  d. Social Network Site: Security, Usability, Performance
+  
+2. Specify the most important QA for each system using scenario
+  
+  a. Enterprise Inventory Control: 
+  
+    Performance
+  
+    Source              : Users
+    Stimulus            : Initiate transactions
+    Artifact            : system
+    Environment         : Under normal operations
+    Response            : Transactions are processed
+    Response Measure    : With average latency of two seconds
+  
+  b. Smart Phone Map App: 
+  
+    Usability
+    
+    Source              : Users
+    Stimulus            : minimize impact of errors
+    Artifact            : system
+    Environment         : at runtime
+    Response            : cancel current operations
+    Response Measure    : cancellation takes less than one second
+    
+  c. Video Game：
+  
+    Testability
+    
+    Source              : Unit tester
+    Stimulus            : performs unit test
+    Artifact            : component of the system
+    Environment         : at completion of the component
+    Response            : component has interface for controlling behavior and output is observable.
+    Response Measure    : path coverage of 85% is archieved within three hours
+  
+  d. Social Network Site: 
+  
+    Security
+    
+    Source              : Correctly identified individual
+    Stimulus            : tries to modify information
+    Artifact            : data within the system
+    Environment         : under normal operations
+    Response            : system maintain audit trail
+    Response Measure    : correct data is restored within a day
